@@ -2,16 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Feed</title>
-  <link rel="stylesheet" href="../css/styles.css" />
-  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/feed.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="../js/mobile.js" defer></script>
 </head>
 <body class="bg-light d-flex flex-column min-vh-100">
 
     <header class="bg-white shadow-sm mb-4">
-        <div class="container">
-        <ul class="nav nav-tabs justify-content-center py-2">
+        <div class="container d-flex justify-content-between align-items-center py-2">
+            <h1 class="h5 m-0">Social App</h1>
+
+            <button id="mobile-menu-toggle" class="d-md-none btn" aria-label="Toggle navigation">
+            &#9776;
+            </button>
+
+            <ul class="nav nav-tabs justify-content-center d-none d-md-flex">
             <li class="nav-item">
                 <a class="nav-link" href="/index.html">Home</a>
             </li>
@@ -21,7 +29,13 @@
             <li class="nav-item">
                 <a class="nav-link" href="/profile/index.html">Profile</a>
             </li>
-        </ul>
+            </ul>
+        </div>
+
+        <div id="mobile-menu" class="mobile-nav d-md-none">
+            <a href="/index.html" class="d-block py-2 px-3 border-bottom">Home</a>
+            <a href="/feed/index.html" class="d-block py-2 px-3 border-bottom">Feed</a>
+            <a href="/profile/index.html" class="d-block py-2 px-3 border-bottom">Profile</a>
         </div>
     </header>
 
@@ -48,17 +62,52 @@
         </section>
 
         <section class="row" id="post-list">
-        <div class="col-md-4 mb-4">
-            <article class="card h-100 shadow-sm">
-            <img class="card-img-top" alt="Post image">
-            <div class="card-body">
-                <h5 class="card-title">Example Post Title</h5>
+            <div class="col-12 mb-5">
+                <article class="card h-100 shadow-sm">
+                <img src="../images/unsplash_xP_AGmeEa6s.png" class="card-img-top" alt="Post image">
+                <div class="card-body">
+                    <h5 class="card-title">@naturelover — Sunset Over the Hills</h5>
+                </div>
+                </article>
             </div>
-            </article>
-        </div>
+
+            <div class="col-12 mb-5">
+                <article class="card h-100 shadow-sm">
+                <img src="../images/unsplash_XJXWbfSo2f0.png" class="card-img-top" alt="Post image">
+                <div class="card-body">
+                    <h5 class="card-title">@techgeek — New Build Complete!</h5>
+                </div>
+                </article>
+            </div>
+
+            <div class="col-12 mb-5">
+                <article class="card h-100 shadow-sm">
+                <img src="../images/unsplash_LEpfefQf4rU.png" class="card-img-top" alt="Post image">
+                <div class="card-body">
+                    <h5 class="card-title">@catdad — Meet Muffin 🐾</h5>
+                </div>
+                </article>
+            </div>
+
+            <div class="col-12 mb-5">
+                <article class="card h-100 shadow-sm">
+                <img src="../images/unsplash_asdwe.png" class="card-img-top" alt="Post image">
+                <div class="card-body">
+                    <h5 class="card-title">@adventurer — Found this hidden waterfall!</h5>
+                </div>
+                </article>
+            </div>
+
+            <div class="col-12 mb-5">
+                <article class="card h-100 shadow-sm">
+                <img src="../images/unsplash_FFqNATH27EM.png" class="card-img-top" alt="Post image">
+                <div class="card-body">
+                    <h5 class="card-title">@foodie — Breakfast goals 🍳</h5>
+                </div>
+                </article>
+            </div>
         </section>
     </main>
-
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

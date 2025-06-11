@@ -1,0 +1,9 @@
+#mobile-menu {
+  display: none;
+  background-color: white;
+  border-top: 1px solid #ccc;
+}
+
+#mobile-menu.active {
+  display: block;
+}
