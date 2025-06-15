@@ -7,3 +7,10 @@
 #mobile-menu.active {
   display: block;
 }
+
+.nav-link.active, 
+#mobile-menu a.active {
+  font-weight: bold;
+  color: blue;
+  border-bottom: 2px solid blue;
+}
