@@ -7,10 +7,16 @@
   <link rel="stylesheet" href="/css/header.css">
   <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
   <script src="/js/mobile.js" defer></script>
+  <script src="/js/spinner.js" defer></script>
 </head>
 <body class="bg-light d-flex flex-column min-vh-100">
 
     <header class="bg-white shadow-sm mb-4">
+        <div id="loading" class="text-center my-4">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
         <div class="container d-flex justify-content-between align-items-center py-2">
             <h1 class="h5 m-0">Social App</h1>
 
@@ -43,14 +49,14 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card shadow-sm p-4">
                     <h1 class="text-center mb-4">Login or Register</h1>
-                    <form action="/profile" method="post" novalidate>
+                    <form action="/profile/index.html" method="get" novalidate>
                         <div class="mb-3">
                             <label for="username" class="form-label">Username:</label>
-                            <input type="text" id="username" name="username" class="form-control" required />
+                            <input type="text" id="username" name="username" class="form-control" required>
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Password:</label>
-                            <input type="password" id="password" name="password" class="form-control" required minlength="8" />
+                            <input type="password" id="password" name="password" class="form-control" required minlength="8">
                         </div>
                         <button type="submit" class="btn btn-primary w-100">Continue</button>
                     </form>
