@@ -1,0 +1,12 @@
+.card-img-top {
+  height: 20em;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+#post-list {
+    max-width: 40em;
+    margin: 2em auto;
+}

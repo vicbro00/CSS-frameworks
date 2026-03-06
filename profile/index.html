@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View and manage your profile, followers, and posts on the Social App.">
+    <title>Profile | Social App</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/images/favicon-512x512.png">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../js/mobile.js" defer></script>
+    <script src="../js/spinner.js" defer></script>
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <header class="bg-white shadow-sm mb-4">
+        <div id="loading" class="text-center my-4">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-between align-items-center py-2">
+            <h1 class="h5 m-0">Social App</h1>
+
+            <button id="mobile-menu-toggle" class="d-md-none btn" aria-label="Toggle navigation">
+            &#9776;
+            </button>
+
+            <ul class="nav nav-tabs justify-content-center d-none d-md-flex">
+            <li class="nav-item">
+                <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/feed/index.html">Feed</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/profile/index.html">Profile</a>
+            </li>
+            </ul>
+        </div>
+
+        <div id="mobile-menu" class="mobile-nav d-md-none">
+            <a href="/index.html" class="d-block py-2 px-3 border-bottom">Home</a>
+            <a href="/feed/index.html" class="d-block py-2 px-3 border-bottom">Feed</a>
+            <a href="/profile/index.html" class="d-block py-2 px-3 border-bottom">Profile</a>
+        </div>
+    </header>
+
+    <main class="container flex-grow-1">
+        <section class="profile-info text-center mb-4">
+        <h2 class="mb-2">@username</h2>
+        <button class="btn btn-primary">Follow</button>
+        </section>
+
+        <section class="followers text-center mb-5">
+        <h3>Followers / Following</h3>
+        <p class="text-muted">Followers: 10 | Following: 5</p>
+        </section>
+
+        <section class="user-posts">
+        <h3 class="mb-3">Your Posts</h3>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+            <div class="col">
+            <article class="card h-100">
+                <div class="card-body">
+                <h4 class="card-title">Post Title</h4>
+                </div>
+            </article>
+            </div>
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center py-3">
+            <p class="mb-0">&copy; 2025 Social App. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

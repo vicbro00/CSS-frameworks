@@ -1,0 +1,16 @@
+#mobile-menu {
+  display: none;
+  background-color: white;
+  border-top: 1px solid #ccc;
+}
+
+#mobile-menu.active {
+  display: block;
+}
+
+.nav-link.active, 
+#mobile-menu a.active {
+  font-weight: bold;
+  color: blue;
+  border-bottom: 2px solid blue;
+}

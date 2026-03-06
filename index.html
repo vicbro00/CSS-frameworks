@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login or register to access your personalized profile and social feed on the Social App.">
+    <title>Login | Social App</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/images/favicon-512x512.png">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/js/mobile.js" defer></script>
+    <script src="/js/spinner.js" defer></script>
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <header class="bg-white shadow-sm mb-4">
+        <div id="loading" class="text-center my-4">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-between align-items-center py-2">
+            <h1 class="h5 m-0">Social App</h1>
+
+            <button id="mobile-menu-toggle" class="d-md-none btn" aria-label="Toggle navigation">
+            &#9776;
+            </button>
+
+            <ul class="nav nav-tabs justify-content-center d-none d-md-flex">
+            <li class="nav-item">
+                <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/feed/index.html">Feed</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/profile/index.html">Profile</a>
+            </li>
+            </ul>
+        </div>
+
+        <div id="mobile-menu" class="mobile-nav d-md-none">
+            <a href="/index.html" class="d-block py-2 px-3 border-bottom">Home</a>
+            <a href="/feed/index.html" class="d-block py-2 px-3 border-bottom">Feed</a>
+            <a href="/profile/index.html" class="d-block py-2 px-3 border-bottom">Profile</a>
+        </div>
+    </header>
+
+    <main class="container flex-grow-1">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm p-4">
+                    <h2 class="text-center mb-4">Login or Register</h2>
+                    <form action="/profile/index.html" method="get" novalidate>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username:</label>
+                            <input type="text" id="username" name="username" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password:</label>
+                            <input type="password" id="password" name="password" class="form-control" required minlength="8">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Continue</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container text-center py-3">
+            <p class="mb-0">&copy; 2025 Social App. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
