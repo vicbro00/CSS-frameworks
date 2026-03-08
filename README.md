@@ -1,5 +1,7 @@
 # CSS-frameworks
 
+![alt text](screenshot.png)
+
 This project is a responsive social media web app built as part of the CSS Frameworks course assignment. It includes an authentication page, a feed page with post functionality, and a profile page. The UI is styled using Bootstrap, and basic JavaScript is used for the mobile navigation menu.
 
 ## Features
